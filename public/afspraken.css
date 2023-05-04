@@ -1,0 +1,287 @@
+body {
+  background: #f5f8fa;
+}
+
+.Canvas {
+  background: #060b14;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 30px;
+  background-color: #4bc2f1;
+}
+
+.Dots {
+  perspective: 50px;
+  -webkit-perspective: 50px;
+  -moz-perspective: 50px;
+  -ms-perspective: 50px;
+
+  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+
+  opacity: 0.55;
+}
+
+.Black-Box {
+  height: 80px;
+  width: 80px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.Layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Demo3-Container {
+  border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  position: relative;
+}
+
+.Center {
+  text-align: center;
+}
+
+.SelectableDoctors {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.SelectableDoctor-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Flex-Center-All {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Scheduler-Container {
+  border-radius: 8px;
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+  background-color: #fff;
+  margin: 2em;
+  width: 900px;
+  height: 500px;
+}
+
+.Scheduler-TwoColumns {
+  display: flex;
+  height: 100%;
+}
+
+.ProgressSummary-Column {
+  text-align: left;
+  /* border-right: 1px solid #d2d2d7; */
+  min-width: 300px;
+  background: #f5f8fa;
+  padding: 3em 0 3em 3em;
+}
+
+.MiniCalendar-Grid {
+  display: grid;
+  grid-template-columns: repeat(7, 30px);
+  row-gap: 4px;
+  column-gap: 10px;
+}
+
+.MiniCalendar-Cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  color: rgb(177, 177, 177);
+  cursor: default;
+}
+
+.MiniCalendar-Cell.Today {
+  color: rgb(62, 149, 247);
+}
+
+.MiniCalendar-AvailableCell {
+  cursor: pointer;
+  color: #000;
+}
+
+.MiniCalendar-TodaySelected {
+  color: #fff;
+  background-color: rgb(62, 149, 247);
+  border-radius: 50%;
+}
+
+.MiniCalendar-CellSelected {
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.MiniCalendar-MonthRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.MiniCalender-MonthLabel {
+  font-size: 1.3em;
+}
+
+.MiniCalendar-WeekdayLabel {
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgb(177, 177, 177);
+}
+
+.MiniCalendar-WeekdayLabel.Active {
+  color: rgb(62, 149, 247);
+}
+
+.MiniCalendar-MonthControls {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+
+.MiniCalendar-MonthButton {
+  cursor: pointer;
+  width: 20px;
+  height: 100%;
+}
+
+.MiniCalendar-MonthButton:hover {
+  color: rgb(62, 149, 247);
+}
+
+.UISelectableButton {
+  height: 52px;
+  border: 1px solid rgb(177, 177, 177);
+  width: 100%;
+  background: #fff;
+  cursor: pointer;
+  padding: 13px 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.UISelectableButton:hover {
+  border-color: rgb(62, 149, 247);
+  background-color: rgba(62, 149, 247, 0.05);
+}
+
+.SlotList {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form-Row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.Form-Element {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 4px;
+}
+
+.Form-Element label {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.Form-TextInput {
+  border: 1px solid #d0d0d0;
+  padding: 9px 10px;
+  border-radius: 3px;
+}
+
+.Form-Submitbutton {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  color: #fff;
+  background: rgb(62, 149, 247);
+  border: none;
+  height: 40px;
+  padding: 11px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Form-Submitbutton:hover {
+  background-color: #1a79ff;
+}
+
+.Form-Submitbutton.Secondary {
+  color: rgb(62, 149, 247);
+  background: #f5f8fa;
+}
+
+.SummaryElement {
+  line-height: 1.4;
+  color: rgb(108, 114, 127);
+  margin-top: 12px;
+}
+
+.SecondaryText {
+  color: rgb(108, 114, 127);
+}
+
+.SummaryColumn {
+  border-top: 1px solid rgb(211, 210, 216);
+  padding: 0 2em;
+  width: 400px;
+  margin-top: 2em;
+  line-height: 1.5;
+}
+
+.SummaryItem-Title {
+  margin-bottom: 10px;
+}
+
+.AnimatedSection {
+  display: grid;
+  grid-template: 1/1;
+}
+
+.AnimatedSection > * {
+  position: relative;
+  grid-area: 1 / 1;
+  transition: all 0.3s 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+  transition-property: opacity, transform;
+}
+
+.AnimatedSection > *[aria-hidden="true"] {
+  display: initial;
+  pointer-events: none;
+  transition-delay: 0s;
+  opacity: 0;
+  transform: scale(0.8);
+}
