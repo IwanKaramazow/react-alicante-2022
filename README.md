@@ -1,6 +1,12 @@
-# speedycal
+# Demo
 
-To install dependencies:
+First install [Bun](https://bun.sh):
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+Then install dependencies:
 
 ```bash
 bun install
@@ -9,7 +15,6 @@ bun install
 To run:
 
 ```bash
-bun run start.js
+bun run watch # start Rescript in one terminal
+bun run start.js # serve the html in another terminal
 ```
-
-This project was created using `bun init` in bun v0.1.13. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
